@@ -261,4 +261,19 @@ i:hover {
     .img-container {
         width: 18%;
     }
+    
+    .about-section {
+        margin-bottom: 3em;
+        padding: 0.7em 1.6em; 
+    }
+
+    .skills-section {
+        margin-bottom: 3em;
+        padding: 1em 0;
+    }
+
+    .goals-section {
+        margin-bottom: 2em;
+        padding: 0.7em 1.3em;
+    }
 }
