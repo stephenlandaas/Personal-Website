@@ -1,0 +1,253 @@
+/* General Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgColor: #00192f;
+    --boxColor: #000117;
+    --textColor: #00bbe3;
+    --hoverColor: #a3d6ff;
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: "Roboto", sans-serif;
+    color: var(--textColor);
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+
+
+/* Header & Navigation */
+header {
+    background: var(--boxColor);
+    padding: 0.25em 0;
+    margin-bottom: 2em;
+}
+
+.heading-flex-container {
+    width: 95%;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.heading-name {
+    flex-shrink: 0;
+}
+
+.heading-name h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.75em;
+}
+
+nav li {
+    margin-left: 2em;
+    flex-shrink: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--textColor);
+    padding: 0.15em;
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
+nav a:hover, nav a:focus {
+    color: var(--hoverColor);
+    text-shadow: 0 0 2px;
+}
+
+.current-page {
+    border-bottom: 2px solid var(--textColor);
+}
+
+.current-page:hover, .current-page:focus {
+    color: var(--textColor);
+    text-shadow: none;
+}
+
+
+/* About Me Section */
+
+.primary-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col {
+    width: 55%;
+}
+
+.about-section, .skills-section, .goals-section{
+    width: 100%;
+    background: var(--boxColor);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.about-section {
+    margin-bottom: 3em;
+    padding: 0.7em 1.35em; 
+}
+
+.about-section-heading {
+    margin-bottom: 0.65em;
+}
+
+
+.body-container {
+    width: 100%;
+}
+
+
+.img-container {
+    width: 28%;
+    float: left;
+    shape-outside: circle(50%);
+    margin: 0em 0.5em 0.5em 0;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.about-section-text {
+    text-indent: 0.75em;
+    text-align: justify;
+}
+
+strong a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+strong a:hover, strong a:focus {
+    color: var(--hoverColor);
+    text-decoration: underline;
+}
+
+.skills-goals-col {
+    width: 35%;
+}
+
+.skills-section {
+    margin-bottom: 3em;
+    padding: 1em 0;
+}
+
+.skills-section-heading {
+    margin-bottom: 0.25em;
+}
+
+.skills-section-body {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.skills-col-1 {
+    margin-right: 0.5em;
+}
+
+.skills-section-body h3 {
+    font-size: 1.4rem;
+    margin: 0.5em 0 1.25em;
+}
+
+.button-container {
+    text-align: center;
+}
+
+#cv-button {
+    padding: 0.5em 0.5em;
+    font-size: 1.15rem;
+    background: transparent;
+    color: var(--textColor);
+    border: 2px solid var(--textColor);
+    border-radius: 5px;
+}
+
+i:hover {
+    color: var(--hoverColor);
+}
+
+#cv-button:hover, #cv-button:focus {
+    color: var(--hoverColor);
+    border-color: var(--hoverColor);
+    cursor: pointer;
+    box-shadow: 0 0 4px;
+}
+
+.goals-section {
+    margin-bottom: 2em;
+    padding: 0.7em 1em;
+}
+
+.goals-section-heading {
+    margin-bottom: 0.4em;
+}
+
+.goals-section-text {
+    text-indent: 0.85em;
+    text-align: justify;
+}
+
+
+@media (max-width: 792px) {
+    .heading-flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading-name {
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0 0 1em 0;
+        text-align: center;
+    }
+
+    .primary-container {
+        flex-direction: column;
+    }
+
+    .about-col {
+        width: 100%;
+    }
+
+    .skills-goals-col {
+        width: 100%;
+    }
+}
