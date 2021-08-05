@@ -254,10 +254,6 @@ i:hover {
 }
 
 @media (min-width: 1750px) {
-    html, body {
-        font-size: 20px;
-    }
-
     .primary-container {
         width: 80%;
     }
