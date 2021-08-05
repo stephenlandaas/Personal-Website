@@ -133,8 +133,9 @@ h2 {
 }
 
 img {
-    object-fit: cover;
+    max-height: 300px;
     width: 100%;
+    max-width: 100%;
 }
 
 .about-section-text {
@@ -249,5 +250,19 @@ i:hover {
 
     .skills-goals-col {
         width: 100%;
+    }
+}
+
+@media (min-width: 1700px) {
+    html, body {
+        font-size: 28px;
+    }
+
+    .primary-container {
+        width: 85%;
+    }
+
+    .img-container {
+        width: 20%;
     }
 }
