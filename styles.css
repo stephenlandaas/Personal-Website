@@ -88,7 +88,7 @@ nav a:hover, nav a:focus {
 /* About Me Section */
 
 .primary-container {
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -126,7 +126,7 @@ h2 {
 
 
 .img-container {
-    width: 25%;
+    width: 24%;
     float: left;
     shape-outside: circle(50%);
     margin: 0em 0.5em 0.5em 0;
@@ -253,6 +253,7 @@ i:hover {
     }
 }
 
+
 @media (min-width: 1750px) {
     .primary-container {
         width: 80%;
@@ -261,19 +262,16 @@ i:hover {
     .img-container {
         width: 18%;
     }
-    
+
     .about-section {
-        margin-bottom: 3em;
-        padding: 0.7em 1.6em; 
+        padding: 2em 3em; 
     }
 
     .skills-section {
-        margin-bottom: 3em;
-        padding: 1em 0;
+        padding: 2em 0;
     }
 
     .goals-section {
-        margin-bottom: 2em;
-        padding: 0.7em 1.3em;
+        padding: 2em 3em;
     }
 }
