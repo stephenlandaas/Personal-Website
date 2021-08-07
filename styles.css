@@ -125,7 +125,7 @@ h2 {
 
 .about-section {
     margin-bottom: 3em;
-    padding: 0.7em 1.35em; 
+    padding: 0.7em 1.35em;
 }
 
 .about-section-heading {
@@ -435,7 +435,11 @@ i:hover {
     }
 
     .skills-section {
-        padding: 2em 0;
+        padding: 1.25em 0;
+    }
+
+    .skills-section-heading {
+        font-size: 1.95rem;
     }
 
     .goals-section {
@@ -449,7 +453,7 @@ i:hover {
     .proj-body-container {
         padding: 0.95em 2.25em;
     }
-    
+
     .contact-container {
         margin-top: 5em;
         width: 55%;
