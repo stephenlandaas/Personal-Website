@@ -394,6 +394,10 @@ i:hover {
     .about-col {
         width: 100%;
     }
+    
+    .img-container {
+        width: 26%;
+    }
 
     .skills-goals-col {
         width: 100%;
