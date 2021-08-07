@@ -259,7 +259,7 @@ i:hover {
 
 .proj-body-container {
     background: var(--boxColor);
-    padding: 0.35em 1em;
+    padding: 0.85em 1.2em;
     border-radius: 60px 0;
 }
 
@@ -387,20 +387,20 @@ i:hover {
         flex-direction: column;
     }
 
-    .projects-container {
-        width: 90%;
-    }
-
     .about-col {
         width: 100%;
     }
-    
+
     .img-container {
         width: 26%;
     }
 
     .skills-goals-col {
         width: 100%;
+    }
+
+    .projects-container {
+        width: 90%;
     }
 
     .contact-container {
@@ -419,13 +419,11 @@ i:hover {
     }
 }
 
+
+
 @media (min-width: 1650px) {
     .primary-container {
         width: 80%;
-    }
-
-    .projects-container {
-        width: 65%;
     }
 
     .img-container {
@@ -444,7 +442,14 @@ i:hover {
         padding: 2em 3em;
     }
 
+    .projects-container {
+        width: 65%;
+    }
 
+    .proj-body-container {
+        padding: 0.95em 2.25em;
+    }
+    
     .contact-container {
         margin-top: 5em;
         width: 55%;
