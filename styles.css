@@ -153,7 +153,7 @@ h2 {
 .about-section-text {
     text-indent: 0.75em;
     line-height: 1.5em;
-    text-align: justify;
+    text-align: left;
 }
 
 .about-section-text:first-of-type {
@@ -241,7 +241,7 @@ i:hover {
 .goals-section-text {
     text-indent: 0.85em;
     line-height: 1.5em;
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -268,7 +268,7 @@ i:hover {
 }
 
 .proj-text {
-    text-align: justify;
+    text-align: left;
     text-indent: 1em;
     line-height: 1.75em;
 }
