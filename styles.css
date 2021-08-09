@@ -363,10 +363,18 @@ i:hover {
     to  {color: var(--hoverColor); box-shadow: 0 0 8px var(--hoverColor);}
 }
 
+@media (max-width: 400px) {
+    .heading-flex-container h1 {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 792px) {
     .heading-flex-container {
         flex-direction: column;
         align-items: center;
+        width: 98%;
+        padding: 1em 0.25em;
     }
 
     .heading-name {
