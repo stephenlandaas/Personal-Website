@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+div {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
 :root {
     --bgColor: #00192f;
     --boxColor: #000117;
@@ -28,6 +37,7 @@ header {
     background: var(--boxColor);
     padding: 0.25em 0;
     margin-bottom: 2em;
+    animation: none;
 }
 
 .heading-flex-container {
@@ -36,10 +46,12 @@ header {
     padding: 1em;
     justify-content: space-between;
     margin: auto;
+    animation: none;
 }
 
 .heading-name {
     flex-shrink: 0;
+    animation: none;
 }
 
 .heading-name h1 {
