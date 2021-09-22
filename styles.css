@@ -153,8 +153,8 @@ h2 {
     float: left;
     shape-outside: circle(50%);
     margin: 0em 1em 0.5em 0;
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 8rem;
+    max-height: 8rem;
 }
 
 .stephen-image {
@@ -411,10 +411,6 @@ i:hover {
         width: 100%;
     }
 
-    .img-container {
-        width: 26%;
-    }
-
     .skills-goals-col {
         width: 100%;
     }
@@ -444,10 +440,6 @@ i:hover {
 @media (min-width: 1650px) {
     .primary-container {
         width: 80%;
-    }
-
-    .img-container {
-        width: 18%;
     }
 
     .about-section {
