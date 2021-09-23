@@ -153,6 +153,8 @@ h2 {
     float: left;
     shape-outside: circle(50%);
     margin: 0em 1em 0.5em 0;
+    min-width: 6rem;
+    min-height: 6rem;
     max-width: 8rem;
     max-height: 8rem;
 }
