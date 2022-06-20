@@ -32,13 +32,11 @@
         <!-- Header & Navigation-->
         <header>
             <div class="heading-flex-container">
-                <div class="heading-name">
-                    <h1><span class="spin">S</span><span class="spin">t</span><span class="spin">e</span><span
-                            class="spin">p</span><span class="spin">h</span><span class="spin">e</span><span
-                            class="spin">n</span> <span class="spin">L</span><span class="spin">a</span><span
-                            class="spin">n</span><span class="spin">d</span><span class="spin">a</span><span
-                            class="spin">a</span><span class="spin">s</span></h1>
-                </div>
+                <a href="index.html" class="heading-link">
+                    <div class="heading-name">
+                        <h1><span class="spin">S</span><span class="spin">t</span><span class="spin">e</span><span class="spin">p</span><span class="spin">h</span><span class="spin">e</span><span class="spin">n</span> <span class="spin">L</span><span class="spin">a</span><span class="spin">n</span><span class="spin">d</span><span class="spin">a</span><span class="spin">a</span><span class="spin">s</span></h1>
+                    </div>
+                </a>
                 <nav>
                     <ul>
                         <li><a href="index.html">ABOUT</a></li>
@@ -54,53 +52,114 @@
         <!-- Primary content of page, projects -->
         <div class="projects-container">
             <!-- PROJECT 1 (University Database) -->
-            <section class="proj">
+            <section class="proj-wrapper">
                 <div class="proj-body-container">
-                    <h2 class="proj-heading">University Database</h2>
-                    <div class="proj-text">
-                        <p>In this project, I worked alongside two friends to create a small database that holds professor records, student records, and a variety of other entities with their respective attributes. To lay out the framework for this project, we began by designing both an ER Diagram and Relational Model as our schemas in order to help us structure our database entitities and their relations. Once this was complete, we utilized MySQL for our database tables, and populated them with sample data. Next, I worked on the front-end design of the website, utilizing HTML5 and CSS3 to create pages and forms to test user queries. Four queries are accessible, and I subsequently used PHP to link the user's input with our database, in which their requests would be processed and the desired results would be displayed.</p>
+                    <div class="proj-img-side">
+                        <div class="proj-img-container img-1" onclick="window.open('https://titan-types.vercel.app/')">
+                        </div>
                     </div>
-                    <div class="learn-more-container">
-                        <a href="https://github.com/stephenlandaas/University-Database-Project" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- PROJECT 2 (Matrix Calculator) -->
-            <section class="proj">
-                <div class="proj-body-container">
-                    <h2 class="proj-heading">Matrix Calculator</h2>
-                    <div class="proj-text">
-                        <p>Within this project, I worked with two other individuals to create a fully functional matrix calculator. This calculator is capable of performing basic matrix operations such as matrix addition, matrix subtraction, while concurrently being capable of more complex operations such as matrix inversion and matrix multiplication. To turn this idea of ours into a reality, we utilized various technologies such as HTML5, CSS3, and JavaScript, with the entirety of the project being developed in VSCode.</p>
-                    </div>
-                    <div class="learn-more-container">
-                        <a href="https://github.com/stephenlandaas/Matrix-Calculator" target="_blank">Learn More</a>
+                    <div class="proj-content-side">
+                        <h2 class="proj-heading">TitanTypes</h2>
+                        <p><em>TitanTypes</em> is a web-based typing test application that allows users to type along to randomly-generated words & quotes, and subsequently gauge their typing speed alongside a variety of other statistics. This web application was written using HTML5, CSS3, JavaScript, supplemented by the jQuery library for additional functionality, and was created by myself alongside two other teammates. Team collaboration and subsequent workflow was organized through the Scrum framework, where core Agile values were incorporated to ensure the success of our team and the subsequent output of a high-quality project. </p>
+                        <div class="learn-more-container">
+                            <a href="https://github.com/stephenlandaas/TitanTypes" target="_blank">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </section>
             
-            <!-- PROJECT 3 (Graphical Hangman) -->
-            <section class="proj">
+            <section class="proj-wrapper">
                 <div class="proj-body-container">
-                    <h2 class="proj-heading">Graphical Hangman</h2>
-                    <div class="proj-text">
-                        <p>A C++ console-based game written with Visual Studio that utilizes Windows Console API functions to create a rudimentary graphical interface. This project did not use any special graphical libraries, and instead creates a graphical interface from the ground up—relying on basic color manipulation of select portions of the console screen. This interactive hangman game features a fully-functional menu interface, difficulty menu, and a credits sequence amongst other graphics and functions.</p>
+                    <div class="proj-img-side">
+                        <div class="proj-img-container img-2" onclick="window.open('./images/WhoWouldWin_img.png')">
+                        </div>
                     </div>
-                    <div class="learn-more-container">
-                        <a href="https://github.com/stephenlandaas/Hangman-2.0" target="_blank">Learn More</a>
+                    <div class="proj-content-side">
+                        <h2 class="proj-heading">Who Would Win?</h2>
+                        <p><em>Who Would Win?</em> &nbsp;is an interactive web application where users can vote on match-ups between their favorite characters from video games, television shows, movies, books, etc. These matchups are randomly-generated, where characters are selected from our Google Firestore database that provides the central database functionality for the application. The overall interface was created utilizing pure HTML5 and CSS3, while Next.js (a React and Node-based framework) was used for providing the application logic and real-time rendering.</p>
+                        <div class="learn-more-container">
+                            <a href="https://github.com/stephenlandaas/Who-Would-Win" target="_blank">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- PROJECT 4 (PERSONAL WEBSITE) -->
-            <section class="proj">
+            <section class="proj-wrapper">
                 <div class="proj-body-container">
-                    <h2 class="proj-heading">Personal Website</h2>
-                    <div class="proj-text">
-                        <p>This project is my personal website, which is what the content you are seeing is currently being featured on right now. This completed project was a product of many hours of thoroughly studying and analyzing the ins and outs of HTML5, CSS3, and Responsive Web Design as a whole. However, despite the many hours of labor that went into the design and construction of this website, it was truly a lot of fun to make, and it is currently compatible with a multitude of devices, including mobile devices, laptops, and larger monitors as well.</p>
+                    <div class="proj-img-side">
+                        <div class="proj-img-container img-3" onclick="window.open('./images/TableTopOnline_img.png')">
+                        </div>
                     </div>
-                    <div class="learn-more-container">
-                        <a href="https://github.com/stephenlandaas/stephenlandaas.github.io" target="_blank">Learn More</a>
+                    <div class="proj-content-side">
+                        <h2 class="proj-heading">TableTop Online</h2>
+                        <p><em>TableTop Online</em> &nbsp;is an interactive web platform where you can play against individuals in a variety of card games. Currently, this web application features the game of War. Implemented through the use of React, Node.js, and Socket.io, this web application allows users to create accounts that will be registered in a Heroku database. From there, users can view a list of available popular card games, and select the game of their choosing. They can then see available rooms in which they can join, or create their own room. Following connection to a room, they can fully engage in multiplayer action with remote users in the card game of their choosing. This web application was developed with 6 other individuals, where I served as the Scrum Master of the project.</p>
+                        <div class="learn-more-container">
+                            <a href="https://github.com/cpsc362-team6/cardgame-client" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-wrapper">
+                <div class="proj-body-container">
+                    <div class="proj-img-side">
+                        <div class="proj-img-container img-4" onclick="window.open('./images/UniversityDatabase_img.png')">
+                        </div>
+                    </div>
+                    <div class="proj-content-side">
+                        <h2 class="proj-heading">University Database</h2>
+                        <p>A small database that holds professor records, student records, and a variety of other entities with their respective attributes. To lay out the framework for this project, my team and I began by designing both an ER Diagram and Relational Model as our schemas in order to help us structure our database entitities and their relations. Once this was complete, we utilized MySQL for our database tables, and populated them with sample data. Next, I worked on the front-end design of the website, utilizing HTML5 and CSS3 to create pages and forms to test user queries. Four queries are accessible, and I subsequently used PHP to link the user's input with our database, in which their requests would be processed and the desired results would be displayed.</p>
+                        <div class="learn-more-container">
+                            <a href="https://github.com/stephenlandaas/University-Database-Project" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-wrapper">
+                <div class="proj-body-container">
+                    <div class="proj-img-side">
+                        <div class="proj-img-container img-5" onclick="window.open('./images/MatrixCalculator_img.png')">
+                        </div>
+                    </div>
+                    <div class="proj-content-side">
+                        <h2 class="proj-heading">Matrix Calculator</h2>
+                        <p>Within this project, I worked with two other individuals to create a fully functional matrix calculator. This calculator is capable of performing basic matrix operations such as matrix addition, matrix subtraction, while concurrently being capable of more complex operations such as matrix inversion and matrix multiplication. To turn this idea of ours into a reality, we utilized various technologies such as HTML5, CSS3, and JavaScript, with the entirety of the project being developed in VSCode.</p>
+                        <div class="learn-more-container">
+                            <a href="https://github.com/stephenlandaas/Matrix-Calculator" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-wrapper">
+                <div class="proj-body-container">
+                    <div class="proj-img-side">
+                        <div class="proj-img-container img-6" onclick="window.open('./images/Simon_img.png')">
+                        </div>
+                    </div>
+                    <div class="proj-content-side">
+                        <h2 class="proj-heading">Simon</h2>
+                        <p>This is a C++ implementation of the game <i>Simon</i> that relies on Windows API functions to change the color of the terminal screen. This game operates essentially how a normal game of Simon would, where colors are randomly generated and the user must recall the pattern and see how far along they can progress. There is an existing high-score system where a user's local scores are saved to a file, so they can attempt to do better than their previous playthrough during each session.</p>
+                        <div class="learn-more-container">
+                            <a href="https://github.com/stephenlandaas/Simon" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-wrapper">
+                <div class="proj-body-container">
+                    <div class="proj-img-side">
+                        <div class="proj-img-container img-7" onclick="window.open('./images/Hangman_img.png')">
+                        </div>
+                    </div>
+                    <div class="proj-content-side">
+                        <h2 class="proj-heading">Graphical Hangman</h2>
+                        <p>A C++ console-based game written with Visual Studio that utilizes Windows Console API functions (WIN32 API) to create a rudimentary graphical interface. This project did not use any special graphical libraries, and instead creates a graphical interface from the ground up—relying on basic color manipulation of select portions of the console screen. This interactive hangman game features a fully-functional menu interface, difficulty menu, and a credits sequence amongst other graphics and functions.</p>
+                        <div class="learn-more-container">
+                            <a href="https://github.com/stephenlandaas/Graphical-Hangman" target="_blank">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </section>

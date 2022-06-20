@@ -60,13 +60,9 @@ header {
     letter-spacing: 0.05em;
 }
 
-.heading-name h1:hover {
-    cursor: default;
-}
-
 .spin {
     display: inline-block;
-    transition: transform .55s;
+    transition: transform .65s;
     transition-timing-function: linear;
 }
 
@@ -109,6 +105,11 @@ nav a:hover, nav a:focus {
     text-shadow: none;
 }
 
+.heading-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
 
 /* About Me Section */
 
@@ -263,43 +264,135 @@ i:hover {
 /* PROJECTS PAGE STYLING */
 
 .projects-container {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
-.proj {
-    margin-bottom: 3em;
+.proj-wrapper{
+    margin-bottom: 5em;
 }
 
 .proj-body-container {
     background: var(--boxColor);
-    padding: 0.85em 1.2em;
-    border-radius: 60px 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border-radius: 35px 5px;
+    width: 100%;
 }
 
 .proj-heading {
     margin-bottom: 0.35em;
 }
 
-.proj-text {
+.proj-img-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    padding: 0.5em;
+}
+
+.proj-img-container {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: zoom-in;
+    border-radius: 10px;
+    transition: transform .25s;
+    border: 0.05em solid #b8bcbe;
+}
+
+.proj-img-container:hover {
+    box-shadow: 0 0 5px var(--hoverColor);
+    border: transparent;
+    transform: scale(1.75);
+}
+
+.img-1 {
+    background-image: url('./images/TitanTypes_img.png');
+    min-height: 12rem;
+    min-width: 17rem;
+    max-width: 17rem;
+    max-height: 12rem;
+}
+
+.img-2 {
+    background-image: url('./images/WhoWouldWin_img.png');
+    min-height: 12rem;
+    min-width: 17rem;
+    max-width: 17rem;
+    max-height: 12rem;
+}
+
+.img-3 {
+    background-image: url('./images/TableTopOnline_img.png');
+    min-height: 15rem;
+    min-width: 17rem;
+    max-width: 17rem;
+    max-height: 15rem; 
+}
+
+.img-4 {
+    background-image: url('./images/UniversityDatabase_img.png');
+    min-height: 16rem;
+    min-width: 17.5rem;
+    max-width: 17.5rem;
+    max-height: 16rem; 
+}
+
+.img-5 {
+    background-image: url('./images/MatrixCalculator_img.png');
+    min-height: 15rem;
+    min-width: 17rem;
+    max-width: 17rem;
+    max-height: 15rem;
+}
+
+.img-6 {
+    background-image: url('./images/Simon_img.png');
+    min-height: 15rem;
+    min-width: 17rem;
+    max-width: 17rem;
+    max-height: 15rem;
+}
+
+.img-7 {
+    background-image: url('./images/Hangman_img.png');
+    min-height: 15rem;
+    min-width: 17rem;
+    max-width: 17rem;
+    max-height: 15rem;
+}
+
+.proj-content-side {
     text-align: left;
     text-indent: 1em;
     line-height: 1.75em;
+    width: 70%;
+    border-left: 4px solid var(--bgColor);
+    padding: 0.75em;
+    display: flex;
+    flex-direction: column;
 }
 
 .learn-more-container {
+    text-indent: 0;
     text-align: center;
     justify-self: flex-end;
-    margin: 1em 0;
+    margin-top: 0.5em;
 }
 
 .learn-more-container a {
+    margin-top: 0.25em;
     text-decoration: none;
     border: 2px solid var(--textColor);
     color: var(--textColor);
     border-radius: 5%;
     font-size: 1.15rem;
-    padding: 0.5em;
+    font-weight: 500;
+    padding: 0.25em 0.45em;
     display: inline-block;
     animation-name: glow;
     animation-duration: 1.5s;
@@ -417,12 +510,21 @@ i:hover {
         width: 100%;
     }
 
-    .projects-container {
-        width: 90%;
+    .proj-body-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .contact-container {
-        width: 85%;
+    .proj-content-side {
+        border-left: 0;
+        border-top: 4px solid var(--bgColor);
+        width: 100%;
+    }
+
+    .proj-img-side {
+        width: 100%;
+        display: none;
     }
 
     .contact-content-container {
@@ -461,11 +563,11 @@ i:hover {
     }
 
     .projects-container {
-        width: 65%;
+        width: 70%;
     }
 
-    .proj-body-container {
-        padding: 0.95em 2.25em;
+    .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
+        min-width: 20rem;
     }
 
     .contact-container {
